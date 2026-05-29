@@ -1,0 +1,20 @@
+{
+  "build": {
+    "tasks": [
+      {
+        "for": "java",
+        "src": ".",
+        "options": {
+          "model": ["../db", ".", "@sap/cds/srv/outbox"]
+        }
+      }
+    ]
+  },
+  "roots": ["../db", ".", "@sap/cds/srv/outbox"],
+  "requires": {
+    "[production]": {
+      "auth": "xsuaa",
+      "db": "hana"
+    }
+  }
+}

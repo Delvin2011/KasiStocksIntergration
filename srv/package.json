@@ -1,0 +1,7 @@
+{
+  "name": "kasistocks-reorders-srv",
+  "version": "1.0.0",
+  "cds": {
+    "roots": ["../db", ".", "@sap/cds/srv/outbox"]
+  }
+}

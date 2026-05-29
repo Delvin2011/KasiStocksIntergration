@@ -1,0 +1,10 @@
+{
+  "payload": {
+    "eventType": "stock.low",
+    "storeId": "1",
+    "productId": "42",
+    "productName": "Castle Lager 500ml",
+    "qtyOnHand": 0,
+    "threshold": 6
+  }
+}
