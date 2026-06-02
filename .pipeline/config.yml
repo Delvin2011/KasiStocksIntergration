@@ -1,0 +1,7 @@
+general:
+  buildTool: mta
+
+steps:
+  cloudFoundryDeploy:
+    deployTool: mtaDeployPlugin
+    mtaPath: mta_archives/kasistocks-reorders_1.0.0-SNAPSHOT.mtar
