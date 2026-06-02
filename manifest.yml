@@ -1,0 +1,16 @@
+---
+applications:
+  - name: kasistocks-reorders-srv
+    path: srv/target/kasistocks-reorders-exec.jar
+    buildpacks:
+      - sap_java_buildpack_jakarta
+    memory: 1024M
+    instances: 1
+    env:
+      SPRING_PROFILES_ACTIVE: cloud
+      JBP_CONFIG_COMPONENTS: "jres: ['com.sap.xs.java.buildpack.jre.SAPMachineJRE']"
+      JBP_CONFIG_SAP_MACHINE_JRE: '{ version: 21.+ }'
+    services:
+      - kasistocks-reorders-auth
+      - kasistocks-reorders-db
+      - kasistocks-reorders-ans
